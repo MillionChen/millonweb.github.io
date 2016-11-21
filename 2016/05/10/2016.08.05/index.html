@@ -96,43 +96,13 @@
   npm install lazy-load-img –save###优势：1.原生js开发，不依赖任何框架或库2.支持将各种宽高不一致的图片，自动剪切成默认图片的宽高  比如说你的默认图片是一张正方形的图片，则各种宽度高度不一样的图片，自动剪切成正方形。  完美解决移动端开发中，用户上传图片宽高不一致而导致的图片变形的问题。3.简洁的API，让你分分钟入门！！！
 
 ###快速入门：">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:image" content="millonweb.github.io/images/default.png">
-<meta property="og:updated_time" content="2016-11-21T06:18:21.000Z">
+<meta property="og:updated_time" content="2016-11-21T06:22:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="懒加载超轻级使用方法">
 <meta name="twitter:description" content="###安装
   npm install lazy-load-img –save###优势：1.原生js开发，不依赖任何框架或库2.支持将各种宽高不一致的图片，自动剪切成默认图片的宽高  比如说你的默认图片是一张正方形的图片，则各种宽度高度不一样的图片，自动剪切成正方形。  完美解决移动端开发中，用户上传图片宽高不一致而导致的图片变形的问题。3.简洁的API，让你分分钟入门！！！
 
 ###快速入门：">
-<meta name="twitter:image" content="millonweb.github.io/images/default.png">
 
 
 
@@ -362,9 +332,7 @@
 <p>###api<br>    lazyloadImg.start(); //开始启动程序，会绑定相关的事件，并且来检测符合加载条件的元素<br>    lazyloadImg.end(); //结束程序，会解除绑定所有的相关事件，释放内存<br>    lazyloadImg.eachDOM(); //检测匹配的元素，符合条件的，会立即加载<br>    lazyloadImg.testMeet(el); //检测元素是否在可视区，传入一个参数，即元素对象<br>    lazyloadImg.loadImg(el); //加载图片，传入一个参数，即img元素对象</p>
 <pre><code>lazyloadImg.getTransparent(src, width, height); //生成一张透明的图片，参数分别是：图片地址，宽度，高度    
 </code></pre><hr>
-<p>###简单Dem</p>
-<p>&lt;!doctype html&gt;</p>
-<html><br><br><head><br>    <meta charset="utf-8"><br>    <meta name="viewport" content="width=device-width, initial-scale=1"><br><br>    <title>h5原生js图片懒加载插件</title><br>    <style type="text/css"><br>        * {<br>            padding: 0;<br>            margin: 0;<br>            list-style: none;<br>        }<br><br>        html,<br>        body {<br>            width: 100%;<br>            height: 100%;<br>        }<br><br>        ul {<br>            overflow: hidden;<br>            box-sizing: border-box;<br>            padding: 10px;<br>        }<br><br>        ul li {<br>            float: left;<br>            box-sizing: border-box;<br>            width: 50%;<br>            height: 100%;<br>            padding: 10px;<br>            margin-bottom: 10px;<br>        }<br><br>        img {<br>            display: block;<br>            width: 100%;<br>            height: 100%;<br>            margin-bottom: 10px;<br>            transition: all 0.5s ease-out 0s;<br>            -webkit-transition: all 0.5s ease-out 0s;<br>        }<br><br>        @-webkit-keyframes fadeIn {<br>            0% {<br>                opacity: 0.5<br>            }<br>            100% {<br>                opacity: 1<br>            }<br>        }<br><br>        @keyframes fadeIn {<br>            0% {<br>                opacity: 0.5<br>            }<br>            100% {<br>                opacity: 1<br>            }<br>        }<br><br>    </style><br><br></head><br><br><body><br>    <ul id="ul"><br>        <li><img data-src="images/pic-1.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-2.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-3.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-4.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-5.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-6.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-7.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-8.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-9.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-10.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-11.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-12.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-13.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-14.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-15.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-16.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-17.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-18.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-19.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-20.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-21.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-22.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-23.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-24.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-25.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-26.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-27.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-28.jpg" src="images/default.png" alt="默认图片"></li><br>        <li><img data-src="images/pic-29.jpg" src="images/default.png" alt="默认图片"></li><br>    </ul><br>    <script src="dist/lazyloadImg.min.js"></script><br>    <script><br>        var lazyloadImg = new LazyloadImg({<br>            el: ‘#ul [data-src]’, //匹配元素<br>            top: 50, //元素在顶部伸出长度触发加载机制<br>            right: 50, //元素在右边伸出长度触发加载机制<br>            bottom: 50, //元素在底部伸出长度触发加载机制<br>            left: 50, //元素在左边伸出长度触发加载机制<br>            qriginal: true, // true，自动将图片剪切成默认图片的宽高；false显示图片真实宽高<br>            load: function(el) { //图片加载成功后执行的回调方法，传入一个参数<br>                el.style.cssText += ‘-webkit-animation: fadeIn 01s ease 0.2s 1 both;animation: fadeIn 1s ease 0.2s 1 both;’;<br>            },<br>            error: function(el) { //图片加载失败后执行的回调方法<br><br>            }<br>        });<br>        //结束图片懒加载事件监听：lazyloadImg.end();<br>        //开始图片懒加载事件监听：lazyloadImg.start();<br><br>    </script><br></body><br><br></html>
+<p>###Dem链接<br><a href="http://lzxb.github.io/lazy-load-img/" target="_blank" rel="external">http://lzxb.github.io/lazy-load-img/</a><br>demo2 将各种宽高不一的图标剪切成默认图片的尺寸大小<br><a href="http://lzxb.github.io/lazy-load-img/index2.html" target="_blank" rel="external">http://lzxb.github.io/lazy-load-img/index2.html</a></p>
 
       
     </div>
