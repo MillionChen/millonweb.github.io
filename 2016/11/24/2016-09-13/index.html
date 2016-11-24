@@ -4,7 +4,7 @@
     <!-- Title -->
     
     <title>
-        archive_a: 2016/3 | 个人博客
+        MongoDB方法 | 个人博客
     </title>
     
     <!-- Favicons -->
@@ -40,7 +40,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="millonweb.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="archive_a: 2016/3 | 个人博客">
+    <meta property="og:title" content="MongoDB方法 | 个人博客">
     <meta property="og:description" content="整理知识分享快乐s">
     
      <!--[if lte IE 9]>
@@ -192,192 +192,227 @@
                 </button>
 				
 				
-                <!-- Index Module -->
-<div class="material-index mdl-grid">
-	
-		<!-- Paradox Header -->
-		<!-- Daily pic -->
-<div class="mdl-card daily-pic mdl-cell mdl-cell--8-col index-top-block">
-    
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/top.png)">
-        <p class="index-top-block-slogan"><a href="#">Hi, nice to meet you</a></p>
-    </div>
+                
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
 
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>陈万军</strong>
-        </div>
-    </div>
-</div>
-
-		<!-- Blog info -->
-<div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-	
-    <!-- Search -->
-	
-	<!-- Google -->
-	<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-		<label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-			<i class="material-icons mdl-color-text--white" role="presentation">search</i>
-		</label>
-
-		<form id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-			<input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
-			<label id="search-form-label" class="mdl-textfield__label" for="search"></label>
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
 			
-			<input type="hidden" name="sitesearch" value="millonweb.github.io">
-		</form>
-	</div>
-
-
-
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="https://millonweb.github.io">
-            <img src="/img/logo.png" alt="logo" />
-        </a>
-    </div>
-
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>个人博客</strong>
-        </div>
-        <div class="section-spacer"></div>
-        
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-        </ul>
-        
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
-            <a class="index_share-link" href="null">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    文章 RSS
-                </li>
-            </a>
-            <a class="index_share-link" href="https://twitter.com/intent/tweet?text=个人博客&url=millonweb.github.io/&via=陈万军" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到 Twitter
-                </li>
-            </a>
-            <a class="index_share-link" href="https://plus.google.com/share?url=millonweb.github.io/" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到 Google+
-                </li>
-            </a>
-            <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=个人博客&url=millonweb.github.io/&pic=&searchPic=false&style=simple" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到微博
-                </li>
-            </a>
-        </ul>
-    </div>
-</div>
-
-	
-    
-    
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-创建数据库"><span class="post-toc-number">1.</span> <span class="post-toc-text">1.创建数据库</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-删除数据库"><span class="post-toc-number">2.</span> <span class="post-toc-text">2.删除数据库</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-插入文档"><span class="post-toc-number">3.</span> <span class="post-toc-text">3.插入文档</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-更新文档"><span class="post-toc-number">4.</span> <span class="post-toc-text">4.更新文档</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5-删除文档"><span class="post-toc-number">5.</span> <span class="post-toc-text">5.删除文档</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#6-查询文档"><span class="post-toc-number">6.</span> <span class="post-toc-text">6.查询文档</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#7-排序"><span class="post-toc-number">7.</span> <span class="post-toc-text">7.排序</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#8-索引"><span class="post-toc-number">8.</span> <span class="post-toc-text">8.索引</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#9-聚合"><span class="post-toc-number">9.</span> <span class="post-toc-text">9.聚合</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#参考地址"><span class="post-toc-number">10.</span> <span class="post-toc-text">参考地址</span></a></li></ol>
 		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
 	
 		
 			<!-- Random Thumbnail -->
 			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/03/12/2016-03-20/">jQuery</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-          jQuer...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/03/12/2016-03-20/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="陈万军's avatar">
-            </div>
-            <div>
-                <strong>陈万军</strong>
-                <span>3月 12, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-    
-	
-		<script>
+				<script>
     
     var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
     
-    var locatePost = $(".something-else").next();
-    for(var i=0; i < 10; i++){
-        
-        randomNum = Math.floor(Math.random() * 5 + 1);
-        
-        locatePost.children(".post_thumbnail-random").attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')')
-        
-        locatePost = locatePost.next();
-    }
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')');
     
 </script>
 
+		
+	
+        <p class="article-headline-p">
+            MongoDB方法
+        </p>
+    </div>
+
 	
 
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>陈万军</strong>
+        <span>11月 24, 2016</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=MongoDB方法&url=millonweb.github.io//2016/11/24/2016-09-13/index.html&via=陈万军" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=millonweb.github.io//2016/11/24/2016-09-13/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=MongoDB方法&url=millonweb.github.io//2016/11/24/2016-09-13/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
 </div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<hr>
+<h4 id="1-创建数据库"><a href="#1-创建数据库" class="headerlink" title="1.创建数据库"></a>1.创建数据库</h4><p><code>use DATABASE_NAME</code></p>
+<hr>
+<h4 id="2-删除数据库"><a href="#2-删除数据库" class="headerlink" title="2.删除数据库"></a>2.删除数据库</h4><p><code>db.dropDatabase()</code></p>
+<p>删除当前数据库，默认为 test，你可以使用 db 命令查看当前数据库名。</p>
+<hr>
+<h4 id="3-插入文档"><a href="#3-插入文档" class="headerlink" title="3.插入文档"></a>3.插入文档</h4><p><code>db.COLLECTION_NAME.insert(document)</code></p>
+<p>MongoDB 使用 insert() 或 save() 方法向集合中插入文档</p>
+<hr>
+<h4 id="4-更新文档"><a href="#4-更新文档" class="headerlink" title="4.更新文档"></a>4.更新文档</h4><p><code>db.collection.update(&lt;query&gt;,&lt;update&gt;,{upsert: &lt;boolean&gt;,multi: &lt;boolean&gt;,writeConcern: &lt;document&gt;})</code></p>
+<p>query : update的查询条件，类似sql update查询内where后面的。</p>
+<p>update : update的对象和一些更新的操作符（如$,$inc…）等，也可以理解为sql update查询内set后面的</p>
+<p>upsert : 可选，这个参数的意思是，如果不存在update的记录，是否插入objNew,true为插入，默认是false，不插入。</p>
+<p>multi : 可选，mongodb 默认是false,只更新找到的第一条记录，如果这个参数为true,就把按条件查出来多条记录全部更新。</p>
+<p>writeConcern :可选，抛出异常的级别。</p>
+<hr>
+<h4 id="5-删除文档"><a href="#5-删除文档" class="headerlink" title="5.删除文档"></a>5.删除文档</h4><p>remove() 方法的基本语法格式如下所示：</p>
+<p><code>db.collection.remove(&lt;query&gt;,&lt;justOne&gt;)</code></p>
+<p>如果你的 MongoDB 是 2.6 版本以后的，语法格式如下：</p>
+<p><code>db.collection.remove(&lt;query&gt;,{justOne: &lt;boolean&gt;,writeConcern: &lt;document&gt;})</code></p>
+<p>query :（可选）删除的文档的条件。<br>justOne : （可选）如果设为 true 或 1，则只删除一个文档。<br>writeConcern :（可选）抛出异常的级别。</p>
+<hr>
+<h4 id="6-查询文档"><a href="#6-查询文档" class="headerlink" title="6.查询文档"></a>6.查询文档</h4><p>MongoDB 查询数据的语法格式如下：</p>
+<p><code>db.COLLECTION_NAME.find()</code></p>
+<p>find() 方法以非结构化的方式来显示所有文档。<br>如果你需要以易读的方式来读取数据，可以使用 pretty() 方法，语法格式如下：</p>
+<p><code>db.col.find().pretty()</code></p>
+<p>pretty() 方法以格式化的方式来显示所有文档。</p>
+<hr>
+<h4 id="7-排序"><a href="#7-排序" class="headerlink" title="7.排序"></a>7.排序</h4><p>在MongoDB中使用使用sort()方法对数据进行排序，sort()方法可以通过参数指定排序的字段，并使用 1 和 -1 来指定排序的方式，其中 1 为升序排列，而-1是用于降序排列。</p>
+<p>sort()方法基本语法如下所示：</p>
+<p><code>db.COLLECTION_NAME.find().sort({KEY:1})</code></p>
+<hr>
+<h4 id="8-索引"><a href="#8-索引" class="headerlink" title="8.索引"></a>8.索引</h4><p>索引通常能够极大的提高查询的效率，如果没有索引，MongoDB在读取数据时必须扫描集合中的每个文件并选取那些符合查询条件的记录。</p>
+<p>MongoDB使用 ensureIndex() 方法来创建索引。</p>
+<p>ensureIndex()方法基本语法格式如下所示：</p>
+<p><code>db.COLLECTION_NAME.ensureIndex({KEY:1})</code></p>
+<p>语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。</p>
+<hr>
+<h4 id="9-聚合"><a href="#9-聚合" class="headerlink" title="9.聚合"></a>9.聚合</h4><p>MongoDB中聚合(aggregate)主要用于处理数据(诸如统计平均值,求和等)，并返回计算后的数据结果。有点类似sql语句中的 count(*)。</p>
+<p>MongoDB中聚合的方法使用aggregate()。</p>
+<p>aggregate() 方法的基本语法格式如下所示：</p>
+<p><code>db.COLLECTION_NAME.aggregate(AGGREGATE_OPERATION)</code></p>
+<hr>
+<h4 id="参考地址"><a href="#参考地址" class="headerlink" title="参考地址"></a><a href="http://www.runoob.com/mongodb" target="_blank" rel="external">参考地址</a></h4>
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+
+
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+        <a href="/2016/11/24/2016-11-21/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/09/20/webWorkingExperience/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
 
 				
 				

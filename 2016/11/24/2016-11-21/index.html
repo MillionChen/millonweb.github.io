@@ -4,7 +4,7 @@
     <!-- Title -->
     
     <title>
-        archive_a: 2016/3 | 个人博客
+        表情包制作 | 个人博客
     </title>
     
     <!-- Favicons -->
@@ -40,7 +40,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="millonweb.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="archive_a: 2016/3 | 个人博客">
+    <meta property="og:title" content="表情包制作 | 个人博客">
     <meta property="og:description" content="整理知识分享快乐s">
     
      <!--[if lte IE 9]>
@@ -192,192 +192,214 @@
                 </button>
 				
 				
-                <!-- Index Module -->
-<div class="material-index mdl-grid">
-	
-		<!-- Paradox Header -->
-		<!-- Daily pic -->
-<div class="mdl-card daily-pic mdl-cell mdl-cell--8-col index-top-block">
-    
-    <!-- Pic & Slogan -->
-    <div class="mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/top.png)">
-        <p class="index-top-block-slogan"><a href="#">Hi, nice to meet you</a></p>
-    </div>
+                
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
 
-    <!-- Avatar & Name -->
-    <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-        <!-- Author Avatar -->
-        <div id="author-avatar">
-            <img src="/img/avatar.png" width="32px" height="32px" alt="avatar">
-        </div>
-        <div>
-            <strong>陈万军</strong>
-        </div>
-    </div>
-</div>
-
-		<!-- Blog info -->
-<div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop index-top-block">
-	
-    <!-- Search -->
-	
-	<!-- Google -->
-	<div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable" method="post" action="">
-		<label id="search-label" class="mdl-button mdl-js-ripple-effect mdl-js-button mdl-button--fab mdl-color--accent mdl-shadow--4dp" for="search">
-			<i class="material-icons mdl-color-text--white" role="presentation">search</i>
-		</label>
-
-		<form id="search-form" method="get" action="//google.com/search" accept-charset="UTF-8" class="mdl-textfield__expandable-holder" target="_blank">
-			<input class="mdl-textfield__input search-input" type="search" name="q" id="search" placeholder="">
-			<label id="search-form-label" class="mdl-textfield__label" for="search"></label>
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
 			
-			<input type="hidden" name="sitesearch" value="millonweb.github.io">
-		</form>
-	</div>
-
-
-
-
-
-
-    <!-- LOGO -->
-    <div class="something-else-logo mdl-color--white mdl-color-text--grey-600">
-        <a href="https://millonweb.github.io">
-            <img src="/img/logo.png" alt="logo" />
-        </a>
-    </div>
-
-    <!-- Infomation -->
-    <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
-        <!-- Blog Title -->
-        <div>
-            <strong>个人博客</strong>
-        </div>
-        <div class="section-spacer"></div>
-        
-        <!-- Pages -->
-        <button id="show-pages-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">view_carousel</i>
-            <span class="visuallyhidden">Pages</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="show-pages-button">
-            
-        </ul>
-        
-        <!-- Menu -->
-        <button id="menubtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <i class="material-icons" role="presentation">more_vert</i>
-            <span class="visuallyhidden">show menu</span>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="menubtn">
-            
-            <a class="index_share-link" href="null">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    文章 RSS
-                </li>
-            </a>
-            <a class="index_share-link" href="https://twitter.com/intent/tweet?text=个人博客&url=millonweb.github.io/&via=陈万军" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到 Twitter
-                </li>
-            </a>
-            <a class="index_share-link" href="https://plus.google.com/share?url=millonweb.github.io/" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到 Google+
-                </li>
-            </a>
-            <a class="index_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=个人博客&url=millonweb.github.io/&pic=&searchPic=false&style=simple" target="_blank">
-                <li class="mdl-menu__item mdl-js-ripple-effect">
-                    分享到微博
-                </li>
-            </a>
-        </ul>
-    </div>
-</div>
-
-	
-    
-    
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。"><span class="post-toc-number">1.</span> <span class="post-toc-text">今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…..</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-素材"><span class="post-toc-number">2.</span> <span class="post-toc-text">1.素材</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-导入到PS并放大图片"><span class="post-toc-number">3.</span> <span class="post-toc-text">2.导入到PS并放大图片</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-加工图片"><span class="post-toc-number">4.</span> <span class="post-toc-text">3.加工图片</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-去色、去多余-点击图像-调整-去色或-快捷键ctrl-shift-U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛"><span class="post-toc-number">5.</span> <span class="post-toc-text">4.去色、去多余      点击图像-调整-去色或  快捷键ctrl+shift+U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-调整曝光-图像-调整-曲线-将曲线向上拉拉到合适的位置"><span class="post-toc-number">6.</span> <span class="post-toc-text">5.调整曝光  图像-调整-曲线     将曲线向上拉拉到合适的位置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-保存图片"><span class="post-toc-number">7.</span> <span class="post-toc-text">6.保存图片</span></a></li></ol>
 		
-			<!-- Paradox Thumbnail -->
-        	<div class="post_entry-module mdl-card mdl-cell mdl-cell--12-col fade out">
-    
-    <!-- Post Thumbnail -->
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
 	
 		
 			<!-- Random Thumbnail -->
 			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-		
-	
-				
-		<!-- Post Title -->
-		<p class="article-headline-p"><a href="/2016/03/12/2016-03-20/">jQuery</a></p>
-	</div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-          jQuer...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2016/03/12/2016-03-20/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="陈万军's avatar">
-            </div>
-            <div>
-                <strong>陈万军</strong>
-                <span>3月 12, 2016</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-            
-            
-            
-            <!-- Post Views -->
-            <span class="post_entry-views">
-                
-            </span>
-        </div>
-    </div>
-            
-</div>
-
-		
-		
-    
-    
-	
-		<script>
+				<script>
     
     var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
     
-    var locatePost = $(".something-else").next();
-    for(var i=0; i < 10; i++){
-        
-        randomNum = Math.floor(Math.random() * 5 + 1);
-        
-        locatePost.children(".post_thumbnail-random").attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')')
-        
-        locatePost = locatePost.next();
-    }
+    $(".post_thumbnail-random").css('background-image', 'url(' + '/img/random/' + randomNum + '.png' + ')');
     
 </script>
 
+		
+	
+        <p class="article-headline-p">
+            表情包制作
+        </p>
+    </div>
+
 	
 
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>陈万军</strong>
+        <span>11月 24, 2016</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=表情包制作&url=millonweb.github.io//2016/11/24/2016-11-21/index.html&via=陈万军" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=millonweb.github.io//2016/11/24/2016-11-21/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=表情包制作&url=millonweb.github.io//2016/11/24/2016-11-21/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
 </div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<hr>
+<h3 id="今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。"><a href="#今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。" class="headerlink" title="今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。"></a>今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。</h3><h4 id="技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…"><a href="#技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…" class="headerlink" title="技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图….."></a>技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…..</h4><hr>
+<h3 id="1-素材"><a href="#1-素材" class="headerlink" title="1.素材"></a>1.素材</h3><p>素材可以是自己拍摄或者网上搜索，我们就随便在网上找一张（嘿嘿）</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-7800285ddbf58905.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"><br><img src="http://upload-images.jianshu.io/upload_images/3162788-d2decb7b00707b2e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<hr>
+<h3 id="2-导入到PS并放大图片"><a href="#2-导入到PS并放大图片" class="headerlink" title="2.导入到PS并放大图片"></a>2.导入到PS并放大图片</h3><p>将熊猫头图片拉进ps软件后，选择图像选项里面的图像大小将熊猫头放大到800像素快捷键WIN+ALT+I  (苹果电脑 Command+ALT+I)。点击确定后再将最后一张图片拉进软件。（这里要注意的是拉入第二张图片后点击下图红圈所示位置。）</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-e6d9ada0c980f307.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<p>然后软件跳出弹窗，我们选择置入文件</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-d7fe5e78e3de36f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<p>最终效果图</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-357e1739db7fa308.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<hr>
+<h3 id="3-加工图片"><a href="#3-加工图片" class="headerlink" title="3.加工图片"></a>3.加工图片</h3><p>让我们选中第二张图片选择套索工具 快捷键L将第二张图片的脸圈起来如图所示</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-7c8d28f8da99b677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<p>快捷键ctrl+j （苹果电脑 Command+j ）复制一张脸出来这时候我们就可以将第二张图片删除了</p>
+<p>之后我们将复制的脸放大到合适大小 快捷键 ctrl+t（苹果电脑 Command+t）完成后也不要忘记点击步骤二中红圈位置。</p>
+<p>最终效果图</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-0acab37f41c08565.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<hr>
+<h3 id="4-去色、去多余-点击图像-调整-去色或-快捷键ctrl-shift-U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛"><a href="#4-去色、去多余-点击图像-调整-去色或-快捷键ctrl-shift-U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛" class="headerlink" title="4.去色、去多余      点击图像-调整-去色或  快捷键ctrl+shift+U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛"></a>4.去色、去多余      点击图像-调整-去色或  快捷键ctrl+shift+U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛</h3><p>橡皮工具位置</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-6127c3fb9467d71d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<p>最终效果图</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-b4978b24bc89c104.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<hr>
+<h3 id="5-调整曝光-图像-调整-曲线-将曲线向上拉拉到合适的位置"><a href="#5-调整曝光-图像-调整-曲线-将曲线向上拉拉到合适的位置" class="headerlink" title="5.调整曝光  图像-调整-曲线     将曲线向上拉拉到合适的位置"></a>5.调整曝光  图像-调整-曲线     将曲线向上拉拉到合适的位置</h3><p>最终效果图</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/3162788-7b6f7dbfc0ec08fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
+<hr>
+<h3 id="6-保存图片"><a href="#6-保存图片" class="headerlink" title="6.保存图片"></a>6.保存图片</h3><p>这时候我们的工作基本完成了，你也可以在图片上添加一些文字让图片更加有趣。（类似功能不予介绍）</p>
+<hr>
+<p>大家可以试着制作一下!</p>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+
+
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+        <a href="/2016/11/24/2016-06-06/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/11/24/2016-09-13/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
 
 				
 				
