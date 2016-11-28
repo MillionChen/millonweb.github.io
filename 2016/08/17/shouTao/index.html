@@ -4,7 +4,7 @@
     <!-- Title -->
     
     <title>
-        表情包制作 | 个人博客
+        学习手机适配 | 个人博客
     </title>
     
     <!-- Favicons -->
@@ -40,7 +40,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="millonweb.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="表情包制作 | 个人博客">
+    <meta property="og:title" content="学习手机适配 | 个人博客">
     <meta property="og:description" content="整理知识分享快乐s">
     
      <!--[if lte IE 9]>
@@ -213,7 +213,7 @@
 	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
 		for="post-toc-trigger-btn">
 			
-			<ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。"><span class="post-toc-number">1.</span> <span class="post-toc-text">今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…..</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-素材"><span class="post-toc-number">2.</span> <span class="post-toc-text">1.素材</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-导入到PS并放大图片"><span class="post-toc-number">3.</span> <span class="post-toc-text">2.导入到PS并放大图片</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-加工图片"><span class="post-toc-number">4.</span> <span class="post-toc-text">3.加工图片</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-去色、去多余-点击图像-调整-去色或-快捷键ctrl-shift-U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛"><span class="post-toc-number">5.</span> <span class="post-toc-text">4.去色、去多余      点击图像-调整-去色或  快捷键ctrl+shift+U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-调整曝光-图像-调整-曲线-将曲线向上拉拉到合适的位置"><span class="post-toc-number">6.</span> <span class="post-toc-text">5.调整曝光  图像-调整-曲线     将曲线向上拉拉到合适的位置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-保存图片"><span class="post-toc-number">7.</span> <span class="post-toc-text">6.保存图片</span></a></li></ol>
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#lib-flexible"><span class="post-toc-number">1.</span> <span class="post-toc-text">lib.flexible</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#最新版本"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">最新版本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#用Grunt打包"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">用Grunt打包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#依赖库"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">依赖库</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用方法"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">使用方法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#把视觉稿中的px转换成rem"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">把视觉稿中的px转换成rem</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字体不使用rem的方法"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">字体不使用rem的方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#手动配置dpr"><span class="post-toc-number">1.6.1.</span> <span class="post-toc-text">手动配置dpr</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#手动设置rem基准值的方法"><span class="post-toc-number">1.6.2.</span> <span class="post-toc-text">手动设置rem基准值的方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一些常用APIs"><span class="post-toc-number">1.6.3.</span> <span class="post-toc-text">一些常用APIs</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#栅格系统"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">栅格系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#需引入makegrid-js"><span class="post-toc-number">1.7.1.</span> <span class="post-toc-text">需引入makegrid.js</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#使用方法-1"><span class="post-toc-number">1.7.2.</span> <span class="post-toc-text">使用方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#利用meta输出栅格样式"><span class="post-toc-number">1.7.3.</span> <span class="post-toc-text">利用meta输出栅格样式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#栅格代码举例"><span class="post-toc-number">1.7.4.</span> <span class="post-toc-text">栅格代码举例</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#四类栅格在不同手机上的表现"><span class="post-toc-number">1.7.5.</span> <span class="post-toc-text">四类栅格在不同手机上的表现</span></a></li></ol></li></ol></li></ol>
 		
 <!--			<li class="mdl-menu__item">Some Action</li>-->
 	</ul>
@@ -246,7 +246,7 @@
 		
 	
         <p class="article-headline-p">
-            表情包制作
+            学习手机适配
         </p>
     </div>
 
@@ -264,7 +264,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>陈万军</strong>
-        <span>11月 24, 2016</span>
+        <span>8月 17, 2016</span>
     </div>
     
     <div class="section-spacer"></div>
@@ -299,21 +299,21 @@
     
     
     <!-- Share Twitter -->
-    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=表情包制作&url=millonweb.github.io//2016/11/24/2016-11-21/index.html&via=陈万军" target="_blank">
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=学习手机适配&url=millonweb.github.io//2016/08/17/shouTao/index.html&via=陈万军" target="_blank">
         <li class="mdl-menu__item">
             分享到 Twitter
         </li>
     </a>
     
     <!-- Share Google+ -->
-    <a class="post_share-link" href="https://plus.google.com/share?url=millonweb.github.io//2016/11/24/2016-11-21/index.html" target="_blank">
+    <a class="post_share-link" href="https://plus.google.com/share?url=millonweb.github.io//2016/08/17/shouTao/index.html" target="_blank">
         <li class="mdl-menu__item">
             分享到 Google+
         </li>
     </a>
     
     <!-- Share Weibo -->
-    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=表情包制作&url=millonweb.github.io//2016/11/24/2016-11-21/index.html&pic=&searchPic=false&style=simple" target="_blank">
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=学习手机适配&url=millonweb.github.io//2016/08/17/shouTao/index.html&pic=&searchPic=false&style=simple" target="_blank">
         <li class="mdl-menu__item">
             分享到微博
         </li>
@@ -325,36 +325,97 @@
                 <!-- Post Content -->
                 <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
 	
-		<hr>
-<h3 id="今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。"><a href="#今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。" class="headerlink" title="今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。"></a>今天我要给大家带来的是互联网时代人们生活中不可或缺的产物，表情包的制作。</h3><h4 id="技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…"><a href="#技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…" class="headerlink" title="技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图….."></a>技术要点：你得有一台电脑，电脑里有photoshop这个软件，还有几张趣图…..</h4><hr>
-<h3 id="1-素材"><a href="#1-素材" class="headerlink" title="1.素材"></a>1.素材</h3><p>素材可以是自己拍摄或者网上搜索，我们就随便在网上找一张（嘿嘿）</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-7800285ddbf58905.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"><br><img src="http://upload-images.jianshu.io/upload_images/3162788-d2decb7b00707b2e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<hr>
-<h3 id="2-导入到PS并放大图片"><a href="#2-导入到PS并放大图片" class="headerlink" title="2.导入到PS并放大图片"></a>2.导入到PS并放大图片</h3><p>将熊猫头图片拉进ps软件后，选择图像选项里面的图像大小将熊猫头放大到800像素快捷键WIN+ALT+I  (苹果电脑 Command+ALT+I)。点击确定后再将最后一张图片拉进软件。（这里要注意的是拉入第二张图片后点击下图红圈所示位置。）</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-e6d9ada0c980f307.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<p>然后软件跳出弹窗，我们选择置入文件</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-d7fe5e78e3de36f3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<p>最终效果图</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-357e1739db7fa308.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<hr>
-<h3 id="3-加工图片"><a href="#3-加工图片" class="headerlink" title="3.加工图片"></a>3.加工图片</h3><p>让我们选中第二张图片选择套索工具 快捷键L将第二张图片的脸圈起来如图所示</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-7c8d28f8da99b677.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<p>快捷键ctrl+j （苹果电脑 Command+j ）复制一张脸出来这时候我们就可以将第二张图片删除了</p>
-<p>之后我们将复制的脸放大到合适大小 快捷键 ctrl+t（苹果电脑 Command+t）完成后也不要忘记点击步骤二中红圈位置。</p>
-<p>最终效果图</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-0acab37f41c08565.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<hr>
-<h3 id="4-去色、去多余-点击图像-调整-去色或-快捷键ctrl-shift-U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛"><a href="#4-去色、去多余-点击图像-调整-去色或-快捷键ctrl-shift-U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛" class="headerlink" title="4.去色、去多余      点击图像-调整-去色或  快捷键ctrl+shift+U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛"></a>4.去色、去多余      点击图像-调整-去色或  快捷键ctrl+shift+U（苹果电脑），在使用橡皮工具去掉多余的部分最好只留下嘴，眼睛，鼻子，和眉毛</h3><p>橡皮工具位置</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-6127c3fb9467d71d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<p>最终效果图</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-b4978b24bc89c104.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<hr>
-<h3 id="5-调整曝光-图像-调整-曲线-将曲线向上拉拉到合适的位置"><a href="#5-调整曝光-图像-调整-曲线-将曲线向上拉拉到合适的位置" class="headerlink" title="5.调整曝光  图像-调整-曲线     将曲线向上拉拉到合适的位置"></a>5.调整曝光  图像-调整-曲线     将曲线向上拉拉到合适的位置</h3><p>最终效果图</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/3162788-7b6f7dbfc0ec08fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Mou icon"></p>
-<hr>
-<h3 id="6-保存图片"><a href="#6-保存图片" class="headerlink" title="6.保存图片"></a>6.保存图片</h3><p>这时候我们的工作基本完成了，你也可以在图片上添加一些文字让图片更加有趣。（类似功能不予介绍）</p>
-<hr>
-<p>大家可以试着制作一下!</p>
+		<h1 id="lib-flexible"><a href="#lib-flexible" class="headerlink" title="lib.flexible"></a>lib.flexible</h1><p>移动端自适应方案，相关文章请参考<a href="https://github.com/amfe/article/issues/17" target="_blank" rel="external">此处</a></p>
+<p>首先，由衷的感谢@完颜(<a href="https://github.com/SMbey0nd" target="_blank" rel="external">@SMbey0nd</a>) 帮忙踩了这个坑，回想起iOS从7~8，从8~9，都踩过只至少一个坑，真的也是醉了。</p>
+<p>手淘这边的flexible方案临时升级如下：</p>
+<ul>
+<li>针对OS 9_3的UA，做临时处理，强制<code>dpr</code>为<code>1</code>，即<code>scale</code>也为<code>1</code>，虽然牺牲了这些版本上的高清方案，但是也只能这么处理了</li>
+<li>这个版本不打算发布到CDN（也不发不到tnpm），所以大家更新的方式，最好手动复制代码内联到<code>html</code>中，具体代码可以<a href="http://www.w3cplus.com/sites/default/files/blogs/2016/1601/flexible.js" target="_blank" rel="external">点击这里下载</a></li>
+</ul>
+<h2 id="最新版本"><a href="#最新版本" class="headerlink" title="最新版本"></a>最新版本</h2><p><strong>0.3.2</strong></p>
+<h2 id="用Grunt打包"><a href="#用Grunt打包" class="headerlink" title="用Grunt打包"></a>用Grunt打包</h2><p>运行 <code>npm install</code>，来安装所需的依赖模块。关于NPM的知识，请参见<a href="http://nodejs.org/" target="_blank" rel="external">nodejs</a>;</p>
+<p>运行 <code>grunt</code>，来对项目进行打包。关于Grunt的知识，请参见<a href="http://gruntjs.com/" target="_blank" rel="external">gruntjs</a>;</p>
+<h2 id="依赖库"><a href="#依赖库" class="headerlink" title="依赖库"></a>依赖库</h2><p>无</p>
+<p>完整引用举例：</p>
+<pre><code>&lt;script src=&quot;http://g.tbcdn.cn/mtb/lib-flexible/{{version}}/??flexible_css.js,flexible.js&quot;&gt;&lt;/script&gt;
+</code></pre><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>建议对于js做<code>内联处理</code>，在<strong>所有资源加载之前</strong>执行这个js。</p>
+<p>执行这个js后，会在<code>html</code>（也就是document.documentElement）上增加一个<code>data-dpr</code>属性，以及<code>font-size</code>样式。</p>
+<p>之后页面中的元素，都可以用rem单位来设置。<code>html</code>上的<code>font-size</code>就是rem的基准像素。</p>
+<h2 id="把视觉稿中的px转换成rem"><a href="#把视觉稿中的px转换成rem" class="headerlink" title="把视觉稿中的px转换成rem"></a>把视觉稿中的px转换成rem</h2><p>首先，目前视觉稿大小分为<code>640</code>，<code>750</code>以及，<code>1125</code>这三种。</p>
+<p>当前方案会把这3类视觉稿分成<code>100份</code>来看待（为了以后兼容vh，vw单位）。每一份被称为一个单位a。同时，1rem单位认定为10a。拿750的视觉稿举例：</p>
+<pre><code>1a = 7.5px
+1rem = 75px
+</code></pre><p>因此，对于视觉稿上的元素的尺寸换算，只需要<code>原始px值</code>除以<code>rem基准px值</code>即可。例如240px <em> 120px的元素，最后转换为3.2rem </em> 1.6rem。</p>
+<h2 id="字体不使用rem的方法"><a href="#字体不使用rem的方法" class="headerlink" title="字体不使用rem的方法"></a>字体不使用rem的方法</h2><p>字体的大小不推荐用rem作为单位。所以对于字体的设置，仍旧使用px作为单位，并配合用<code>data-dpr</code>属性来区分不同dpr下的的大小。</p>
+<p>例如：</p>
+<pre><code>div {
+    width: 1rem; 
+    height: 0.4rem;
+    font-size: 12px; // 默认写上dpr为1的fontSize
+}
+
+[data-dpr=&quot;2&quot;] div {
+    font-size: 24px;
+}
+
+[data-dpr=&quot;3&quot;] div {
+    font-size: 36px;
+}
+</code></pre><h3 id="手动配置dpr"><a href="#手动配置dpr" class="headerlink" title="手动配置dpr"></a>手动配置dpr</h3><p>引入执行js之前，可以通过输出meta标签方式来手动设置dpr。语法如下：</p>
+<pre><code>&lt;meta name=&quot;flexible&quot; content=&quot;initial-dpr=2,maximum-dpr=3&quot; /&gt;
+</code></pre><p>其中<code>initial-dpr</code>会把dpr强制设置为给定的值，<code>maximum-dpr</code>会比较系统的dpr和给定的dpr，取最小值。<strong>注意：这两个参数只能选其一。</strong></p>
+<h3 id="手动设置rem基准值的方法"><a href="#手动设置rem基准值的方法" class="headerlink" title="手动设置rem基准值的方法"></a>手动设置rem基准值的方法</h3><p>输出如下css样式即可：</p>
+<pre><code>html {font-size: 60px!important;}
+</code></pre><h3 id="一些常用APIs"><a href="#一些常用APIs" class="headerlink" title="一些常用APIs"></a>一些常用APIs</h3><p><strong>[Number] lib.flexible.dpr</strong></p>
+<p>当前页面的dpr值</p>
+<p><strong>[Number] lib.flexible.rem</strong> </p>
+<p>当前页面的rem基准值</p>
+<p><strong>[Number|String] lib.flexible.rem2px([Number|String digital])</strong></p>
+<p>把rem转换为px</p>
+<p><strong>[Number|String] lib.flexible.px2rem([Number|String digital])</strong> </p>
+<p>把px转换为rem</p>
+<p><strong>lib.flexible.refreshRem()</strong> </p>
+<p>刷新当前页面的rem基准值</p>
+<h2 id="栅格系统"><a href="#栅格系统" class="headerlink" title="栅格系统"></a>栅格系统</h2><h3 id="需引入makegrid-js"><a href="#需引入makegrid-js" class="headerlink" title="需引入makegrid.js"></a>需引入makegrid.js</h3><pre><code>&lt;script src=&quot;http://g.tbcdn.cn/mtb/lib-flexible/{{version}}/makegrid.js&quot;&gt;&lt;/script&gt;
+</code></pre><h3 id="使用方法-1"><a href="#使用方法-1" class="headerlink" title="使用方法"></a>使用方法</h3><pre><code>lib.flexible.makeGrid(params)
+</code></pre><ul>
+<li>[Object params]<ul>
+<li>designWidth - 设计稿宽度</li>
+<li>designUnit - 设计稿最小单位a（以px为单位）</li>
+<li>columnCount - 栅格列数</li>
+<li>columnXUnit - 栅格列宽（以a为单位）</li>
+<li>gutterXUnit - 栅格间距（以a为单位）</li>
+<li>edgeXUnit - 页面左右边距（以a为单位）</li>
+<li>className - 栅格样式的名称（可省略，默认为grid）</li>
+</ul>
+</li>
+</ul>
+<p>通过传入视觉的栅格规范定义，可以输出对应的css样式。</p>
+<pre><code>lib.flexible.makeGridMode(modeName)
+</code></pre><ul>
+<li>[String modeName]</li>
+</ul>
+<p>方案还预置了几个默认的栅格规范，分别是<code>750-12</code>，<code>750-6</code>，<code>640-12</code>，<code>640-6</code>。</p>
+<h3 id="利用meta输出栅格样式"><a href="#利用meta输出栅格样式" class="headerlink" title="利用meta输出栅格样式"></a>利用meta输出栅格样式</h3><pre><code>&lt;meta content=&quot;designWidth=750, desginUnit=6, columnCount=12, columnXUnit=7, gutterXUnit=3, edgeXUnit=4&quot; name=&quot;grid&quot; /&gt;
+</code></pre><p>或</p>
+<pre><code>&lt;meta content=&quot;modeName=750-12&quot; name=&quot;grid&quot; /&gt;
+</code></pre><h3 id="栅格代码举例"><a href="#栅格代码举例" class="headerlink" title="栅格代码举例"></a>栅格代码举例</h3><pre><code>&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;col-4&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-6&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;grid&quot;&gt;
+    &lt;div class=&quot;col-3&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-4&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;col-5&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre><h3 id="四类栅格在不同手机上的表现"><a href="#四类栅格在不同手机上的表现" class="headerlink" title="四类栅格在不同手机上的表现"></a>四类栅格在不同手机上的表现</h3><p><img src="grid.jpg" alt="栅格"></p>
 
 	
 	
@@ -375,7 +436,7 @@
     
     <!-- Prev Nav -->
     
-        <a href="/2016/11/24/2016-06-06/" id="post_nav-newer" class="prev-content">
+        <a href="/2016/08/20/2016.05.14/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -389,7 +450,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2016/11/24/2016-09-13/" id="post_nav-older" class="next-content">
+        <a href="/2016/07/15/github/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
